@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components{
+    .container {
+        @apply bg-[#131218] min-w-full flex flex-col items-center;
+    }
+    
+};
