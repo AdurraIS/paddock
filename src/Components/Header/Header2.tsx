@@ -1,8 +1,7 @@
 import { useState } from "react"
 import { RxAvatar } from "react-icons/rx";
 
-import logo from '../../assets/Catalog/logo.svg'
-
+import Icon from '../../assets/icones/iconesComponent';
 
 export const Header2 = () => {
     const [at, setAt] = useState(1);
@@ -12,8 +11,8 @@ export const Header2 = () => {
     }
     return (
         <>
-            <div className="w-[100%] bg-[#28272f]  text-[16px] text-white min-h-full flex justify-center h-20">
-                <img className="w-[10vw] flex  flex-row items-center" src={logo} alt="" />
+            <div className="w-[100%] bg-[#28272f]  text-[16px] text-white min-h-full flex justify-center items-center h-20">
+                <Icon className="w-[10vw] flex  flex-row items-center" name="paddock"></Icon>
                 <ul className="mx-[20vw] relative flex justify-center gap-4 items-center flex-row">
                     <li className={`${at == 1 ? "text-[#EF3331] transition-text duration-300" : "text-[#858585]"}`}>
                         <button onClick={() => handleSelect(1)}>Home</button>
