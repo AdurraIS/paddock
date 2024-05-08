@@ -5,7 +5,7 @@ import heartOutline from '../../assets/Catalog/heartOutline.svg'
 
 import { useState, useEffect } from 'react';
 
-import {Icon} from '../../assets/icones/iconesComponent';
+import { Icon } from '../../assets/icones/iconesComponent';
 
 export const ContentPilots = () => {
 
@@ -37,8 +37,8 @@ export const ContentPilots = () => {
                             <div className="flex flex-row justify-between w-[70%] ">
                                 <p className="p-3 text-[1.4vw] bg-[#ffb800] font-bold rounded-full">50% Off</p>
                                 <div className="flex flex-row justify-evenly items-center space-x-4">
-                                    <Icon className="w-[2.2vw]" name="heartOutline"></Icon>
-                                    <Icon className="w-[2.2vw]" name="share"></Icon>
+                                    <Icon estilo="w-full h-full bg-red-900" name="heartOutline"></Icon>
+                                    <Icon estilo="w-full h-full] bg-red-900" name="share"></Icon>
                                 </div>
                             </div>
                             <div><p className="w-[90%] text-[#bdbbbe]  text-[3.3vw]">Lewis Hamilton (Deluxe Edition)</p></div>
@@ -46,8 +46,7 @@ export const ContentPilots = () => {
                             <div><p className=" container w-[100%] flex text-[#EF3331] text-[2vw] items-start font-bold">Rp 149.995</p></div>
                         </div>
                         <div className=" flex flex-row space-x-4 items-center">
-                            <img src={heartOutline} alt="" className=" p-[1vw] cursor-pointer h-[4vw] rounded-full border border-4 text-[#ef3331]  font-bold border-[#ef3331]" />
-                            <Icon name="heartOutline" className=" bg-red-900 p-[1vw] cursor-pointer h-[4vw] rounded-full border border-4 text-[#ef3331]  font-bold border-[#ef3331]" ></Icon>
+                            <Icon name="heartOutline" estilo="p-[1vw] cursor-pointer h-[4vw] rounded-full border border-4 text-[#ef3331]  font-bold border-[#ef3331]" ></Icon>
                             <p className=" text-[1.5vw] cursor-pointer p-[.8vw] rounded-full border border-4 text-[#ef3331] px-[3vw] border-[#ef3331]">+ Add to wallet</p>
                             <p className=" text-[1.5vw] cursor-pointer p-[.8vw] rounded-full border border-4 text-[#ffffff] px-[3vw] font-bold bg-[#ef3331] border-[#ef3331]">Mint Now</p>
                         </div>
