@@ -4,7 +4,7 @@ import { RxAvatar } from "react-icons/rx";
 import logo from '../../assets/Catalog/logo.svg'
 
 
-export const Header2 = () => {
+export const Header = () => {
     const [at, setAt] = useState(1);
     const [tokens, setTokens] = useState(0);
     function handleSelect(number: number) {

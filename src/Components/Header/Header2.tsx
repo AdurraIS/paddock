@@ -29,7 +29,7 @@ export const Header2 = () => {
                     </li>
 
                 </ul>
-                <div className="w-[10vw] flex flex-row items-center justify-center  gap-4 right-[-20vw] text-[#EF3331]">
+                <div className="w-[10vw] flex flex-row items-center justify-end  gap-4 text-[#EF3331]">
                     {tokens} PDK
                     <button>
                         <RxAvatar size="25px" />
