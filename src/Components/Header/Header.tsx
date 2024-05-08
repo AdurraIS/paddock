@@ -3,14 +3,14 @@ import { RxAvatar } from "react-icons/rx";
 import { getBalance } from "../../services/MetaMaskService";
 
 
-export const Header = () => {
+export const Header = ({account}) => {
     const [balance, setBalance] = useState();
     const [at, setAt] = useState(1);
     function handleSelect(number: number) {
         setAt(number)
     }
     function handleBalance(){
-        getBalance().then((balance) => setBalance(balance))
+        getBalance(account).then((balance) => setBalance(balance))
     }
     useEffect(()=>{
         handleBalance()
@@ -33,7 +33,7 @@ export const Header = () => {
                     <li className={`${at == 4 ? "text-[#EF3331]" : "text-[#858585]"}`}>
                         <button onClick={() => handleSelect(4)}>Help</button>
                     </li>
-                    <div className="flex absolute right-[-30vw] rounded flex-row justify-center items-center  gap-4 text-[#EF3331]">
+                    <div className="flex absolute right-[-30vw] flex-row justify-center items-center  gap-4 text-[#EF3331]">
                         {balance} PDK
                         <button>
                             <RxAvatar size="25px"/>

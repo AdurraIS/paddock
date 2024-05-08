@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Header />
+        <Header account={account}/>
         <Routes>
           <Route path="/" element={<Catalog />} />
           <Route path="/signin" element={<SignIn setAccount={setAccount} />} />
