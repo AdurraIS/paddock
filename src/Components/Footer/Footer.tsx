@@ -1,7 +1,7 @@
-import { useState } from "react"
+
 import { InputText } from 'primereact/inputtext';
 
-import Icon from '../../assets/icones/iconesComponent';
+import {Icon} from '../../assets/icones/iconesComponent';
 
 export const Footer = () => {
     return (

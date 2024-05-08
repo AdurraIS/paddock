@@ -13,7 +13,9 @@ export const Header = ({account}) => {
         getBalance(account).then((balance) => setBalance(balance))
     }
     useEffect(()=>{
-        handleBalance()
+        if(account){
+            handleBalance()
+        }
     },[])
     return (
         <>

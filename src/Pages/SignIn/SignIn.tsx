@@ -1,6 +1,5 @@
 
 import { useState } from "react";
-import metamasklogo from "../../assets/SignIn/metamasklogo.webp"
 import flyer from "../../assets/SignIn/Flyer.png";
 import { getMetaMaskProvider, getAccounts } from "../../services/MetaMaskService.ts";
 import { supabase } from "../../services/Supabase.ts";

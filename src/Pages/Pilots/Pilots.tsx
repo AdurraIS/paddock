@@ -5,7 +5,7 @@ import { Header2 } from "../../Components/Header/Header2";
 import { Footer } from "../../Components/Footer/Footer";
 
 
-import { ContentPilots } from "../../Components/ContentPilots/ContentPilots.jsx";
+import { ContentPilots } from "../../Components/ContentPilots/ContentPilots.js";
 
 
 export const Pilots = () => {
@@ -15,9 +15,7 @@ export const Pilots = () => {
     return (
         <>
             <div className="container w-[100%] min-h-screen">
-                <Header2 />
                 <ContentPilots />
-                <Footer />
             </div>
         </>
     )
