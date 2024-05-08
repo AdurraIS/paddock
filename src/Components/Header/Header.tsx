@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { RxAvatar } from "react-icons/rx";
 import { getBalance } from "../../services/MetaMaskService";
-
+import { Link } from "react-router-dom";
 export const Header = ({account}) => {
     const [balance, setBalance] = useState();
 
@@ -24,7 +24,7 @@ export const Header = ({account}) => {
                 <ul className="relative flex justify-center gap-4 items-center flex-row"> 
                 <h1 className="logo absolute left-[-30vw]">PADDOCK</h1>
                     <li className={`${at == 1 ? "text-[#EF3331]" : "text-[#858585]"}`}>
-                        <button onClick={() => handleSelect(1)}>Catalog</button>
+                        <button onClick={() => handleSelect(1)}><Link to={"/"}>Catalog</Link></button>
                     </li>
                     <li className={`${at == 2 ? "text-[#EF3331] transition-text duration-300" : "text-[#858585]"}`}>
                         <button onClick={() => handleSelect(2)}>Tokens</button>
@@ -33,7 +33,7 @@ export const Header = ({account}) => {
                         <button onClick={() => handleSelect(3)}>NFTs</button>
                     </li>
                     <li className={`${at == 4 ? "text-[#EF3331] transition-text duration-300" : "text-[#858585]"}`}>
-                        <button onClick={() => handleSelect(4)}>Pilots</button>
+                        <button onClick={() => handleSelect(4)}><Link to={"/pilots"}>Pilots</Link></button>
                     </li>
                     <div className="flex absolute right-[-30vw] flex-row justify-center items-center  gap-4 text-[#EF3331]">
                         {balance} PDK

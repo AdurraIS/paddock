@@ -1,9 +1,5 @@
-import { RxAvatar } from "react-icons/rx";
-import SearchIcon from '../../assets/Catalog/SearchIcon.svg'
-import { InputText } from 'primereact/inputtext';
 
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 import star from '../../assets/Catalog/Star.svg'

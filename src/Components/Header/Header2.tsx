@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { RxAvatar } from "react-icons/rx";
 
-import Icon from '../../assets/icones/iconesComponent';
+import {Icon} from '../../assets/icones/iconesComponent';
 
 export const Header2 = () => {
     const [at, setAt] = useState(1);

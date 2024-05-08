@@ -11,10 +11,8 @@ export const Catalog = () => {
     return (
         <>
             <div className="container w-[100vw] min-h-screen">
-
                 <InputSearch search={search} setSearch={setSearch} />
                 <ContentCatalog />
-                <Footer />
             </div>
         </>
     )

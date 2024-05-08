@@ -3,9 +3,8 @@
 import LeftArrow from '../../assets/Catalog/LeftArrow.svg'
 import heartOutline from '../../assets/Catalog/heartOutline.svg'
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
-import share from '../../assets/Catalog/share.svg'
 import {Icon} from '../../assets/icones/iconesComponent';
 
 export const ContentPilots = () => {
