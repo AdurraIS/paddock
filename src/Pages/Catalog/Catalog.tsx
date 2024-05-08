@@ -10,7 +10,6 @@ export const Catalog = () => {
     return (
         <>
             <div className="container w-[100vw] min-h-screen">
-                <Header />
                 <InputSearch search={search} setSearch={setSearch} />
             </div>
         </>

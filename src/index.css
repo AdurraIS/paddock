@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,7 +7,9 @@
 
 @layer components{
     .container {
-        @apply bg-[#131218] min-w-full flex flex-col items-center;
+        @apply bg-[#131218] min-w-full min-h-full flex flex-col items-center;
     }
-    
+    .logo{
+        @apply text-[#EF3331] font-[MuseoModerno] font-extrabold text-[25px];
+    }
 };
