@@ -1,26 +1,15 @@
 import { useState } from "react"
-import { RxAvatar } from "react-icons/rx";
-import SearchIcon from '../../assets/Catalog/SearchIcon.svg'
 import { InputText } from 'primereact/inputtext';
 
-import LeftArrow from '../../assets/Catalog/LeftArrow.svg'
-import Facebook from '../../assets/Catalog/Facebook.svg'
-import Tiktok from '../../assets/Catalog/Tiktok.svg'
-import instagram from '../../assets/Catalog/instagram.svg'
+import Icon from '../../assets/icones/iconesComponent';
 
 export const Footer = () => {
-    const [at, setAt] = useState(1);
-    const [tokens, setTokens] = useState(0);
-    function handleSelect(number: number) {
-        setAt(number)
-    }
     return (
         <div className="w-[100%] bottom-0 flex flex-col justify-between items-center h-[40rem]  bg-[#2a2931] ">
             <div className="w-[80%]  h-[25%] flex flex-row justify-between items-center">
-                <p className="text-white  text-[2vh] font-bold text-[#ef3331]">PADDOCK</p>
+                <Icon name="paddock"></Icon>
                 <div className="relative">
                     <InputText placeholder="Subscribe to our newsletter..." name="inputNewLetter" className="rounded-[10rem] bg-[#5d5c62] text-[#d2d2d2] px-8 py-3 text-[15px] w-[20rem] " />
-                    <img src={LeftArrow} className="absolute  absolute right-[5%] top-[50%] translate-y-[-50%]" />
                 </div>
             </div>
             <div className="w-[80%] h-[35%] flex flex-row justify-between">
@@ -40,15 +29,15 @@ export const Footer = () => {
                 <div className=" flex flex-col justify-between">
                     <p className="  font-bold text-[#fff] text-[1.7vh]">Social Media</p>
                     <div className="flex flex-row space-x-4">
-                        <img src={Facebook} alt="" />
+                        <Icon name="facebook" />
                         <p className="text-[#fff] text-[1.2vh]">Facebook</p>
                     </div>
                     <div className="flex flex-row space-x-4" >
-                        <img src={Tiktok} alt="" />
+                        <Icon name="tiktok" />
                         <p className="text-[#fff] text-[1.2vh]  ">Tiktok</p>
                     </div>
                     <div className="flex flex-row space-x-4" >
-                        <img src={instagram} alt="" />
+                        <Icon name="instagram" />
                         <p className="text-[#fff] text-[1.2vh]  ">Instagram</p>
                     </div>
                 </div>

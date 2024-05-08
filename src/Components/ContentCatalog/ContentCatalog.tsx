@@ -1,7 +1,9 @@
-import { useState } from "react"
 import { RxAvatar } from "react-icons/rx";
 import SearchIcon from '../../assets/Catalog/SearchIcon.svg'
 import { InputText } from 'primereact/inputtext';
+
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 
 import star from '../../assets/Catalog/Star.svg'
@@ -22,10 +24,10 @@ export const ContentCatalog = () => {
                     {Icones.map((icon, index) => {
                         return (
 
-                            <div key={index} className="flex-col w-[19vw] flex p-[1.3rem] bg-[#27262e] rounded-[1rem] m-2 ">
+                            <Link to={'/Piloto'} key={index} className="flex-col w-[19vw] flex p-[1.3rem] bg-[#27262e] rounded-[1rem] m-2 ">
 
-                                <div className="container w-[100%] h-[15rem] bg-[#5d5c62] rounded-[1rem] overflow-hidden">
-                                    <img src="https://www.dci.com.br/wp-content/uploads/2021/10/fortuna-de-lewis-hamilton.jpg" alt="" />
+                                <div className="container w-[100%] bg-[#5d5c62] rounded-[1rem] overflow-hidden">
+                                    <img src="../../src/assets/image/louis.png" alt="" />
                                 </div>
                                 <div className="container w-[90%] text-[#bdbbbe] bg-[#27262e]  text-[3vh]">
                                     <p>
@@ -47,7 +49,7 @@ export const ContentCatalog = () => {
                                     <img src={heart} alt="" />
                                 </div>
 
-                            </div>
+                            </Link >
 
                         )
                     })}

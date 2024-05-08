@@ -5,8 +5,6 @@ import { getBalance } from "../../services/MetaMaskService";
 export const Header = ({account}) => {
     const [balance, setBalance] = useState();
 
-
-
     const [at, setAt] = useState(1);
     function handleSelect(number: number) {
         setAt(number)

@@ -4,11 +4,13 @@ import { InputText } from 'primereact/inputtext';
 
 import LeftArrow from '../../assets/Catalog/LeftArrow.svg'
 import heartOutline from '../../assets/Catalog/heartOutline.svg'
+import Icon from '../../assets/icones/iconesComponent'; // Caminho para o componente Icon
 
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import share from '../../assets/Catalog/share.svg'
+
 import Icon from '../../assets/icones/iconesComponent';
 
 export const ContentPilots = () => {
@@ -27,9 +29,9 @@ export const ContentPilots = () => {
             <div className="py-[5vh] pb-[10vh] w-[80vw] ">
                 <div className="flex flex-row w-[100%] text-[#858585] fill-[#858585] space-x-4 font-bold ">
                     <p>Paddock</p>
-                    <img className=" fill-[#858585]" src={LeftArrow} alt="" />
+                    <Icon className=" fill-[#858585]" name={leftArrow} />
                     <p>NFTs</p>
-                    <img src={LeftArrow} alt="" />
+                    <Icon className=" fill-[#858585]" name={leftArrow} />
                     <p>Pilots</p>
                     <img src={LeftArrow} alt="" />
                     <p>Lewis Hamilton (Deluxe Edition)</p>
@@ -40,18 +42,18 @@ export const ContentPilots = () => {
                         <div className="flex flex-col justify-evenly space-y-[1vw]">
                             <div className="flex flex-row justify-between w-[70%] ">
                                 <p className="p-3 text-[1.4vw] bg-[#ffb800] font-bold rounded-full">50% Off</p>
-                                <div className="flex flex-row justify-evenly items-center space-x-4">
-                                    <Icon className="w-[2.2vw]" name="heartOutline"></Icon>
-                                    <Icon className="w-[2.2vw]" name="share"></Icon>
+                                <div className="flex flex-row justify-evenly space-x-4">
+                                    {/* <img className="w-[2.2vw]" src={heartOutline} alt="" /> */}
+                                    {/* <img className="w-[2.2vw]" src={share} alt="" /> */}
+                                    {/* <Icon name="share"></Icon> */}
                                 </div>
                             </div>
                             <div><p className="w-[90%] text-[#bdbbbe]  text-[3.3vw]">Lewis Hamilton (Deluxe Edition)</p></div>
                             <div><p className="container w-[100%] flex text-[#646467] text-[1.3vw] items-start font-bold  line-through ">Rp 299.990</p></div>
                             <div><p className=" container w-[100%] flex text-[#EF3331] text-[2vw] items-start font-bold">Rp 149.995</p></div>
                         </div>
-                        <div className=" flex flex-row space-x-4 items-center">
+                        <div className=" flex flex-row space-x-4">
                             <img src={heartOutline} alt="" className=" p-[1vw] cursor-pointer h-[4vw] rounded-full border border-4 text-[#ef3331]  font-bold border-[#ef3331]" />
-                            <Icon name="heartOutline" className=" bg-red-900 p-[1vw] cursor-pointer h-[4vw] rounded-full border border-4 text-[#ef3331]  font-bold border-[#ef3331]" ></Icon>
                             <p className=" text-[1.5vw] cursor-pointer p-[.8vw] rounded-full border border-4 text-[#ef3331] px-[3vw] border-[#ef3331]">+ Add to wallet</p>
                             <p className=" text-[1.5vw] cursor-pointer p-[.8vw] rounded-full border border-4 text-[#ffffff] px-[3vw] font-bold bg-[#ef3331] border-[#ef3331]">Mint Now</p>
                         </div>
