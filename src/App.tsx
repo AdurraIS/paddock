@@ -1,12 +1,13 @@
 import { Catalog } from "./Pages/Catalog/Catalog";
+import { Pilots } from "./Pages/Pilots/Pilots";
 
-      
+
 
 function App() {
 
   return (
     <>
-     <Catalog/>
+      <Pilots />
     </>
   )
 }

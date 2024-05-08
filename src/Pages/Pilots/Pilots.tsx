@@ -1,20 +1,22 @@
 import { useState } from "react";
 import { InputSearch } from "../../Components/InputSearch/InputSearch";
 import { Header } from "../../Components/Header/Header";
+import { Header2 } from "../../Components/Header/Header2";
 import { Footer } from "../../Components/Footer/Footer";
 
-import { ContentCatalog } from "../../Components/ContentCatalog/ContentCatalog";
 
-export const Catalog = () => {
+import { ContentPilots } from "../../Components/ContentPilots/ContentPilots.jsx";
+
+
+export const Pilots = () => {
 
     const [search, setSearch] = useState('');
 
     return (
         <>
             <div className="container w-[100%] min-h-screen">
-                <Header />
-                <InputSearch search={search} setSearch={setSearch} />
-                <ContentCatalog />
+                <Header2 />
+                <ContentPilots />
                 <Footer />
             </div>
         </>

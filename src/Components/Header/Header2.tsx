@@ -12,7 +12,7 @@ export const Header2 = () => {
     }
     return (
         <>
-            <div className="w-[100%]  text-[16px] text-white min-h-full flex justify-center h-20">
+            <div className="w-[100%] bg-[#28272f]  text-[16px] text-white min-h-full flex justify-center h-20">
                 <img className="w-[10vw] flex  flex-row items-center" src={logo} alt="" />
                 <ul className="mx-[20vw] relative flex justify-center gap-4 items-center flex-row">
                     <li className={`${at == 1 ? "text-[#EF3331] transition-text duration-300" : "text-[#858585]"}`}>
