@@ -69,7 +69,6 @@ export const ContactUs = () => {
                     </div>
                 </div>
             </div>
-            <Footer ></Footer>
         </div>
 
     );
