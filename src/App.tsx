@@ -4,6 +4,7 @@ import { Catalog } from "./Pages/Catalog/Catalog";
 import { SignIn } from "./Pages/SignIn/SignIn";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Pilots } from "./Pages/Pilots/Pilots";
+import { SignUp } from "./Pages/SignUp/SignUp";
 
 function App() {
   const [account, setAccount] = useState();
@@ -12,9 +13,10 @@ function App() {
       <BrowserRouter>
         <Header account={account}/>
         <Routes>
-          <Route path="/" element={<Catalog />} />
-          <Route path="/signin" element={<SignIn setAccount={setAccount} />} />
-          <Route path="/pilots" element={<Pilots/>} />
+          <Route path="/" element={<Catalog account={account}/>} />
+          <Route path="/signin" element={<SignIn setAccount={setAccount} account={account} />} />
+          <Route path="/signup" element={<SignUp setAccount={setAccount} account={account}/>} />
+          <Route path="/pilots" element={<Pilots account={account}/>} />
         </Routes>
       </BrowserRouter>
     </>
