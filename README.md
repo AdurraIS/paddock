@@ -15,7 +15,7 @@ FantasyGame On Fórmula 1 In Web3.
 <p>Fizemos integração com a carteira MetaMask para que pudessemos mostrar os dados, manusear as nfts e tokens de forma mais livre, trazendo uma melhor experiência de usuário<\p>
 
 ### BlockChain
-<p>Utilizamos os recursos da API da Lumx Protocol para fazer a criação de um token $PDK e NFTs na blockchain da chiliz.</p>
+Utilizamos os recursos da API da Lumx Protocol para fazer a criação de um token $PDK e NFTs na blockchain da chiliz.
 
 -------------------------------------------------------------
 ## Resumo do Projeto: 
