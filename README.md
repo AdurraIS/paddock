@@ -1,4 +1,4 @@
-![2024-05-08 23 24 12 localhost daa7ef446fed](https://github.com/AdurraIS/paddock/assets/122327066/212c2cf7-50a8-47aa-b3bf-afcbd3d9eeb4)![Screenshot_2](https://github.com/AdurraIS/paddock/assets/122327066/e885138d-f5ce-4263-ba13-46bae3220c38)# Paddock 
+# Paddock 
 FantasyGame On Fórmula 1 In Web3. 
 
 -------------------------------------------------------------
