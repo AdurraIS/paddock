@@ -17,16 +17,16 @@ export const SignUp = ({ setAccount, account }: any) => {
   const navigate = useNavigate();
 
   async function handleSubmit(event) {
-    
+
     event.preventDefault();
     const web3 = await getMetaMaskProvider();
     const accounts = await web3.eth.requestAccounts();
-    
+
     if (!accounts[0]) {
       setMessage("You need to connect your MetaMask Account!");
       return;
     }
-    
+
     try {
       let { data, error } = await supabase.from("Usuario").insert({
         email: email,
@@ -37,7 +37,7 @@ export const SignUp = ({ setAccount, account }: any) => {
         senha: password,
         endereco: address,
       });
-      
+
       if (error) {
         console.error(error);
         return;
@@ -87,6 +87,7 @@ export const SignUp = ({ setAccount, account }: any) => {
                                 text-[#858585] text-[14px] py-2 px-4"
                     type="text"
                     placeholder="username"
+                    name="username"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                     required
@@ -105,6 +106,7 @@ export const SignUp = ({ setAccount, account }: any) => {
                     className="rounded bg-[#28272F] text-[#858585] text-[14px] py-2 px-4"
                     mask="99/99/9999"
                     value={date}
+                    name="data"
                     onChange={(e: any) => setDate(e.target.value)}
                     placeholder="00/00/0000"
                     required
@@ -121,6 +123,7 @@ export const SignUp = ({ setAccount, account }: any) => {
                     className="rounded bg-[#28272F]
                                 text-[#858585] text-[14px] py-2 px-4"
                     type="email"
+                    name="email"
                     placeholder="example@paddock.com.br"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -140,6 +143,7 @@ export const SignUp = ({ setAccount, account }: any) => {
                     className="rounded bg-[#28272F]
                             text-[#858585] text-[14px] py-2 px-4"
                     type="password"
+                    name="password"
                     placeholder="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}

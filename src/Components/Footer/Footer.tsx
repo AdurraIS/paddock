@@ -5,7 +5,7 @@ import { Icon } from '../../assets/icones/iconesComponent';
 
 export const Footer = () => {
     return (
-        <div className="w-screen bottom-0 flex flex-col justify-between items-center h-[40rem]  bg-[#2a2931] ">
+        <div className="w-[100%] bottom-0 flex flex-col justify-between items-center h-[40rem]  bg-[#2a2931] ">
             <div className="w-[80%]  h-[25%] flex flex-row justify-between items-center">
                 <Icon name="paddock"></Icon>
                 <div className="relative">
