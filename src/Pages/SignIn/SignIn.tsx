@@ -70,6 +70,7 @@ export const SignIn = ({setAccount, account}) => {
         } catch (error) {
             console.error(error);
         }
+        navigate("/")
     }
     
     return (

@@ -23,7 +23,7 @@ export const Header = ({account}) => {
             <div className="w-screen text-[16px] container text-white min-h-full items-center flex justify-center h-20">
             
                 <ul className="relative flex justify-center gap-4 items-center flex-row"> 
-                <h1 className="logo absolute left-[-30vw]">PADDOCK</h1>
+                <h1 className="logo absolute left-[-30vw]"><Link to={"/"}>PADDOCK</Link></h1>
                     <li className={`${at == 1 && account? "text-[#EF3331]" : "text-[#858585]"}`}>
                         {account? (<button onClick={() => handleSelect(1)}><Link to={"/"}>Catalog</Link></button>):
                         (<button><Link to={"/signin"}>Catalog</Link></button>)
@@ -36,7 +36,7 @@ export const Header = ({account}) => {
                         <button onClick={() => handleSelect(3)}>NFTs</button>
                     </li>
                     <li className={`${at == 4 && account ? "text-[#EF3331] transition-text duration-300" : "text-[#858585]"}`}>
-                    {account? (<button onClick={() => handleSelect(1)}><Link to={"/pilots"}>Pilots</Link></button>):
+                    {account? (<button onClick={() => handleSelect(4)}><Link to={"/pilots"}>Pilots</Link></button>):
                         (<button><Link to={"/signin"}>Pilots</Link></button>)
                         }  
                     </li>
