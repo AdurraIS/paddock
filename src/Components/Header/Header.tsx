@@ -10,7 +10,7 @@ export const Header = ({account}) => {
         setAt(number)
     }
     function handleBalance(){
-        getBalance(account).then((balance) => setBalance(balance))
+        getBalance(account).then((value) => setBalance(value))
         console.log(balance)
     }
     useEffect(()=>{

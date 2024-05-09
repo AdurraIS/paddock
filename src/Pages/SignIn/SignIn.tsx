@@ -3,14 +3,13 @@ import { useState, useEffect } from "react";
 import flyer from "../../assets/SignIn/Flyer.png";
 import { getMetaMaskProvider} from "../../services/MetaMaskService.ts";
 import { supabase } from "../../services/Supabase.ts";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const SignIn = ({setAccount, account}) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [message, setMessage] = useState('');
     const navigate = useNavigate();
-    const location = useLocation();
 
     const handleEmailChange = (event) => {
         setEmail(event.target.value);

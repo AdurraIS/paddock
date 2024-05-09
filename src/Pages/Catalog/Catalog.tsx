@@ -11,7 +11,7 @@ export const Catalog = ({account}) => {
     const navigate = useNavigate();
     const location = useLocation();
     useEffect(() => {
-        if(location.pathname == "/" && account){
+        if(location.pathname == "/" && !account){
          navigate("/signin")
         }
      }, [location.pathname]);
