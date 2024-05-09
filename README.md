@@ -30,7 +30,7 @@ O Paddock é um FantasyGame destinados ao amantes das pistas e espectadores das 
 
 ## Images 
 
-
+![alt text](Screenshot_4.png) ![alt text](<2024-05-08 23.17.02 localhost 99764353ed93.png>) ![alt text](Screenshot_2-1.png) ![alt text](<2024-05-08 23.17.19 localhost efc7b8e45a77.png>) ![alt text](<2024-05-08 23.17.53 localhost 1b6f6162579f.png>) ![alt text](<2024-05-08 23.18.52 localhost e03fd9f691de.png>)
 
 -------------------------------------------------------------
 ## Funcionalidades
