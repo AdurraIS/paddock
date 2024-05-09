@@ -12,8 +12,7 @@ FantasyGame On Fórmula 1 In Web3.
 <p>Optamos supabase também pela complexidade que seria utilizar uma API e um banco de dados próprio. Mas temos intenção de desenvolver uma API no futuro para que possamos tornar mais seguro, mais customizavel e salvar mais informações na Blockchain.</p>
 
 ### Metamask
-<p>Integração da Metamask Wallet</p>
-<p>Fizemos integração com a carteira MetaMask para que pudessemos mostrar os dados, manusear as nfts e tokens de forma mais livre, trazendo uma experiência de usuário melhor.</p>
+<p>Fizemos integração com a carteira MetaMask para que pudessemos mostrar os dados, manusear as nfts e tokens de forma mais livre, trazendo uma melhor experiência de usuário<\p>
 
 ### BlockChain
 <p>Utilizamos os recursos da API da Lumx Protocol para fazer a criação de um token $PDK e NFTs na blockchain da chiliz.</p>
