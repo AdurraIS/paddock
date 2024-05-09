@@ -1,8 +1,8 @@
 
 import icons from './Icon.json';
 
-export const Icon = ({ name }) => {
+export const Icon = ({ name, estilo }) => {
     const iconSvg = icons[name];
-    return <div dangerouslySetInnerHTML={{ __html: iconSvg }} />;
+    return <div className={estilo} dangerouslySetInnerHTML={{ __html: iconSvg }} />;
 };
 

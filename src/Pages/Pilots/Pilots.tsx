@@ -4,13 +4,13 @@ import { ContentPilots } from "../../Components/ContentPilots/ContentPilots.js";
 import { useLocation, useNavigate } from "react-router-dom";
 
 
-export const Pilots = () => {
+export const Pilots = ({account}) => {
 
     const [search, setSearch] = useState('');
     const navigate = useNavigate();
     const location = useLocation();
     useEffect(() => {
-        if(location.pathname == "/"){
+        if(location.pathname == "/" && account){
          navigate("/signin")
         }
      }, [location.pathname]);

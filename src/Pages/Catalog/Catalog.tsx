@@ -1,15 +1,17 @@
 import { useState, useEffect } from "react";
 import { InputSearch } from "../../Components/InputSearch/InputSearch";
-import { Footer } from "../../Components/Footer/Footer";
 
 import { ContentCatalog } from "../../Components/ContentCatalog/ContentCatalog";
+import { useLocation, useNavigate } from "react-router-dom";
 
-export const Catalog = () => {
+
+export const Catalog = ({account}) => {
 
     const [search, setSearch] = useState('');
-
+    const navigate = useNavigate();
+    const location = useLocation();
     useEffect(() => {
-        if(location.pathname == "/"){
+        if(location.pathname == "/" && account){
          navigate("/signin")
         }
      }, [location.pathname]);
