@@ -1,4 +1,4 @@
-# Paddock 
+![2024-05-08 23 24 12 localhost daa7ef446fed](https://github.com/AdurraIS/paddock/assets/122327066/212c2cf7-50a8-47aa-b3bf-afcbd3d9eeb4)![Screenshot_2](https://github.com/AdurraIS/paddock/assets/122327066/e885138d-f5ce-4263-ba13-46bae3220c38)# Paddock 
 FantasyGame On Fórmula 1 In Web3. 
 
 -------------------------------------------------------------
@@ -30,15 +30,19 @@ O Paddock é um FantasyGame destinados ao amantes das pistas e espectadores das 
 
 ## Images 
 ##### cadastro
-![alt text](<2024-05-08 23.24.12 localhost daa7ef446fed.png>)
+![2024-05-08 23 24 12 localhost daa7ef446fed](https://github.com/AdurraIS/paddock/assets/122327066/ec880527-5ec0-43b9-aa04-1d5d892612d3)
+
 ##### catalogo
-![alt text](<2024-05-08 23.17.02 localhost 99764353ed93.png>) 
+![2024-05-08 23 17 02 localhost 99764353ed93](https://github.com/AdurraIS/paddock/assets/122327066/8c322b1c-3f73-4628-81c9-1d15ae201150)
+
 ##### login
-![alt text](<2024-05-08 23.21.56 localhost 365cfb750e45.png>)
+![2024-05-08 23 33 11 localhost b44a0a93bd17](https://github.com/AdurraIS/paddock/assets/122327066/89de4573-4cf2-4e48-902c-174864d676f1)
+
 ##### Piloto
-![alt text](<2024-05-08 23.17.53 localhost 1b6f6162579f.png>) 
+![2024-05-08 23 17 53 localhost 1b6f6162579f](https://github.com/AdurraIS/paddock/assets/122327066/bbe009ee-1c1e-447b-b6bd-200d41e9aafb)
+
 ##### Contate-nos
-![alt text](<2024-05-08 23.18.52 localhost e03fd9f691de.png>)
+![2024-05-08 23 18 52 localhost e03fd9f691de](https://github.com/AdurraIS/paddock/assets/122327066/dc0f9c5a-cea8-424f-a43a-92e47821bc48)
 
 -------------------------------------------------------------
 ## Funcionalidades
