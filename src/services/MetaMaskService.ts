@@ -34,13 +34,9 @@ export async function getMetaMaskProvider() {
 
     return web3;
 }
-export async function getAccounts(){
-    const web3 = await getMetaMaskProvider();
-    const accounts = await web3.eth.requestAccounts();
-    return accounts;
-}
 
 export async function getBalance(address) {
+    const web3 = await getMetaMaskProvider();
 
     const contractAddress = '0xdbbB13f74609E641BFA0c00DEdAd066De392912D';
 
