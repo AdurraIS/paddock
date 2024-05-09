@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Catalog } from "./Pages/Catalog/Catalog";
 import { SignIn } from "./Pages/SignIn/SignIn";
 import { Pilots } from "./Pages/Pilots/Pilots";
+import { ContactUs } from "./Pages/ContactUs/ContactUs";
 import { Header } from "./Components/Header/Header";
 import { ContentCatalog } from "./Components/ContentCatalog/ContentCatalog";
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Catalog />} />
           <Route path="/signin" element={<SignIn setAccount={setAccount} />} />
           <Route path="/pilots" element={<Pilots />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
       </BrowserRouter>
     </>

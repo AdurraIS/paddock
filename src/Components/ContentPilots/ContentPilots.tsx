@@ -9,6 +9,7 @@ import { Icon } from '../../assets/icones/iconesComponent';
 
 export const ContentPilots = () => {
 
+    const [largura, setLargura] = useState('9vw');
     const [position, setPosition] = useState('1vw');
     const [selecionado1, setSelecionado1] = useState('#fff');
     const [selecionado2, setSelecionado2] = useState('#858585');
@@ -37,8 +38,8 @@ export const ContentPilots = () => {
                             <div className="flex flex-row justify-between w-[70%] ">
                                 <p className="p-3 text-[1.4vw] bg-[#ffb800] font-bold rounded-full">50% Off</p>
                                 <div className="flex flex-row justify-evenly items-center space-x-4">
-                                    <Icon estilo="w-full h-full bg-red-900" name="heartOutline"></Icon>
-                                    <Icon estilo="w-full h-full] bg-red-900" name="share"></Icon>
+                                    <Icon estilo="hover:cursor-pointer" name="heartOutline"></Icon>
+                                    <Icon estilo="hover:cursor-pointer" name="share"></Icon>
                                 </div>
                             </div>
                             <div><p className="w-[90%] text-[#bdbbbe]  text-[3.3vw]">Lewis Hamilton (Deluxe Edition)</p></div>
@@ -54,26 +55,26 @@ export const ContentPilots = () => {
                 </div>
                 <div className="relative mt-[5vh] w-[100%] h-[5vw] flex flex-row items-center bg-[#2A2931] overflow-hidden rounded-full p-[2vw]">
                     <div
-                        style={{ left: position, transitionTimingFunction: 'cubic-bezier(.48,0,.38,1.49)' }}
-                        className="transition-position duration-500 w-[9vw] h-[3.5vw] bg-red-500 absolute rounded-full">
+                        style={{ left: position, transitionTimingFunction: 'cubic-bezier(.48,0,.38,1.49)', width: largura }}
+                        className="transition-position duration-500  h-[3.5vw] bg-red-500 absolute rounded-full">
 
                     </div>
 
-                    <div className="z-10 flex flex-row space-x-[10vw] justify-around items-start w-[50%]">
+                    <div className="z-10 flex flex-row space-x-[10vw] justify-around items-start w-[66%]">
                         <p
-                            onClick={() => { setPosition('1vw'); setSelecionado1('#fff'); setSelecionado2('#858585'); setSelecionado3('#858585') }}
+                            onClick={() => { setPosition('1vw'); setLargura('10vw'); setSelecionado1('#fff'); setSelecionado2('#858585'); setSelecionado3('#858585') }}
                             style={{ color: selecionado1 }}
-                            className=" transition-color duration-500 cursor-pointer font-bold uppercase inline-block text-[2vw]">teste
+                            className=" transition-color duration-500 cursor-pointer font-bold uppercase inline-block text-[2vw]">Details
                         </p>
                         <p
-                            onClick={() => { setPosition('17vw'); setSelecionado1('#858585'); setSelecionado2('#fff'); setSelecionado3('#858585') }}
+                            onClick={() => { setPosition('19vw'); setLargura('9vw'); setSelecionado1('#858585'); setSelecionado2('#fff'); setSelecionado3('#858585') }}
                             style={{ color: selecionado2 }}
-                            className="transition-color duration-500 cursor-pointer font-bold uppercase inline-block text-[2vw] text-[#858585]">teste
+                            className="transition-color duration-500 cursor-pointer font-bold uppercase inline-block text-[2vw] text-[#858585]">Review
                         </p>
                         <p
-                            onClick={() => { setPosition('33vw'); setSelecionado1('#858585'); setSelecionado2('#858585'); setSelecionado3('#fff') }}
+                            onClick={() => { setPosition('36.5vw'); setLargura('15vw'); setSelecionado1('#858585'); setSelecionado2('#858585'); setSelecionado3('#fff') }}
                             style={{ color: selecionado3 }}
-                            className="transition-color duration-500 cursor-pointer font-bold uppercase inline-block text-[2vw] text-[#858585]">teste</p>
+                            className="transition-color duration-500 cursor-pointer font-bold uppercase w-[20vw] text-[2vw] text-[#858585]">similar NFTs</p>
                     </div>
                 </div>
 
