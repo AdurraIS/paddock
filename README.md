@@ -3,9 +3,9 @@ FantasyGame On Fórmula 1 In Web3.
 
 -------------------------------------------------------------
 ## TECNOLOGIAS 
-### React Ts
-<p>Para o desenvolvimento web optamos o react Ts pois é uma Biblioteca de desenvolvimento web hibrido.</p>
-<p>Também ganhando agilidade no projeto por ser em Typescript, uma linguagem mais familiar.</p>
+### React
+<p>Para o desenvolvimento web optamos o react pois é um framework que nos permite muita flexibilidade e bibliotecas para auxiliar no desenvolvimento.</p>
+<p>Optamos por TypeScript para nos desafiarmos a uma linguagem que não é tão familiar para nós, uma linguagem mais tipada.</p>
 
 ### Supabase
 <p>Backend as a service, que utilizamos para persistencia de dados.</p>
@@ -13,12 +13,10 @@ FantasyGame On Fórmula 1 In Web3.
 
 ### Metamask
 <p>Integração da Metamask Wallet</p>
-<p>Posso dizer que a API está muito bem desenvolvida e documentada.</p>
-
-### Vite
+<p>Fizemos integração com a carteira MetaMask para que pudessemos mostrar os dados, manusear as nfts e tokens de forma mais livre, trazendo uma experiência de usuário melhor.</p>
 
 ### BlockChain
-<p>o Token $PDK e os Smartcontract para NFT foram utilizados os recursos da API da Lumx Protocol integrada a Blockchain da Chiliz em sua rede Testnet Spicy.</p>
+<p>Utilizamos os recursos da API da Lumx Protocol para fazer a criação de um token $PDK e NFTs na blockchain da chiliz.</p>
 
 -------------------------------------------------------------
 ## Resumo do Projeto: 
